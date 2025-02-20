@@ -7,6 +7,23 @@
   --foreground: #171717;
 }
 
+:root {
+  --font-roboto: 'Roboto', sans-serif;
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-lato: 'Lato', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-oswald: 'Oswald', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-bebas-neue: 'Bebas Neue', cursive;
+}
+
+body {
+  font-family: var(--font-poppins); /* Default font */
+  font-family: var(--font-montserrat);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
