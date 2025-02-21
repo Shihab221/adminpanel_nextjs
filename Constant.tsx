@@ -7,7 +7,7 @@ export const sidebarData = [
         { name:"Home", icon: "📋", path: "/"},
         { name: "Orders", icon: "📦", path: "/orderPage" },
         { name: "Tracking", icon: "📍", path: "/trackingPage" },
-        { name: "Marketplace", icon: "🛒", path: "/orderPage" },
+        { name: "Analytics", icon: "🛒", path: "/analyticsPage" },
         { name: "Customers", icon: "👥", path: "/orderPage" },
         { name: "Message", icon: "💬", badge: 2 , path: "/orderPage" },
       ],

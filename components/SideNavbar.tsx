@@ -1,19 +1,17 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { sidebarData } from "../Constant";
-import Image from "next/image";
-import close from '../public/Images/close.png';
-import open from '../public/Images/open.png';
 import { useRouter } from 'next/navigation';
+import { FaBars, FaTimes } from 'react-icons/fa'; // Import the icons
 
 const SideNavbar = () => {
   const [isOpen, setIsOpen] = useState(true);
   const router = useRouter();
-  const path:any=sidebarData[0].items[0].path;
+  const path: any = sidebarData[0].items[0].path;
 
-  const handleNavigation = (path:string) => {
-      router.push(path); // Navigate to the specified path
+  const handleNavigation = (path: string) => {
+    router.push(path); // Navigate to the specified path
   };
 
   return (
@@ -24,19 +22,19 @@ const SideNavbar = () => {
           className="p-2 my-2 rounded-md focus:outline-none"
         >
           {isOpen ? (
-            <Image src={close} width={32} height={32} alt="close icon" />
+            <FaTimes size={24} /> // Close icon
           ) : (
-            <Image src={open} width={32} height={32} alt="open icon" />
+            <FaBars size={24} /> // Hamburger icon
           )}
         </button>
       </div>
-      
+
       <div className="flex flex-col text-black dark:text-white">
         {isOpen && (
           <div className="w-64 h-screen p-4 px-2">
             {sidebarData.map((section, index) => (
               <div key={index} className="mb-6">
-                <h3 className=" font-bold text-sm mb-2">
+                <h3 className="font-bold text-sm mb-2">
                   {section.title}
                 </h3>
                 <ul>

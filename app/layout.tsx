@@ -6,6 +6,7 @@ import SideNavbar from "@/components/SideNavbar";
 import { Inter } from 'next/font/google'
 import { Poppins } from 'next/font/google';
 import { Montserrat } from 'next/font/google';
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({ 
   subsets: ['latin'], 
@@ -58,7 +59,7 @@ export default function RootLayout({
         
         {children}
         </div>
-        
+        <Footer />
       </body>
     </html>
    
