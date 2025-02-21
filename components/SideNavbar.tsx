@@ -17,7 +17,7 @@ const SideNavbar = () => {
   };
 
   return (
-    <div className="flex flex-row border-r border-gray-900 dark:border-orange-500 font-inter">
+    <div className="flex flex-row border-r border-gray-900 dark:border-gray-500 font-inter">
       <div className="px-2">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -44,7 +44,7 @@ const SideNavbar = () => {
                     <li
                       key={itemIndex}
                       onClick={() => handleNavigation(item.path)}
-                      className="flex items-center justify-between py-2 px-4 rounded-md hover:bg-gray-100 cursor-pointer"
+                      className="flex items-center justify-between py-2 px-4 rounded-md hover:bg-gray-800 cursor-pointer"
                     >
                       <div className="flex items-center">
                         <span className="mr-3">{item.icon}</span>

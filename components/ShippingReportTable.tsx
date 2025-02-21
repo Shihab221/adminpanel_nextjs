@@ -8,8 +8,8 @@ const ShippingReportTable = () => {
     <div className="p-6 text-gray-900 dark:text-gray-300">
       <h2 className="text-xl font-semibold mb-4">Shipping Reports</h2>
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border border-orange-500 rounded-lg">
-          <thead className="bg-gray-100 dark:bg-gray-800 border-b border-orange-500">
+        <table className="min-w-full bg-white border border-gray-500 rounded-lg">
+          <thead className="bg-gray-100 dark:bg-gray-800 border-b border-gray-500">
             <tr>
               <th className="py-3 px-6 text-left">No</th>
               <th className="py-3 px-6 text-left">Recipient</th>
@@ -21,7 +21,7 @@ const ShippingReportTable = () => {
           </thead>
           <tbody className="text-gray-700">
             {shippingReportData.map((item, index) => (
-              <tr key={item.id} className="border-b dark:border-orange-500 dark:text-white hover:bg-gray-50 dark:bg-gray-800">
+              <tr key={item.id} className="border-b dark:border-gray-500 dark:text-white hover:bg-gray-50 dark:bg-gray-800">
                 <td className="py-3 px-6">{String(index + 1).padStart(2, '0')}</td>
                 <td className="py-3 px-6 flex items-center space-x-3">
                   <Image src={item.avatar} alt={item.recipient} className=" rounded-full" width={64} height={64}/>

@@ -2,11 +2,10 @@
 import Hi from "@/components/Hi";
 import RightPanel from "@/components/RightPanel";
 import ShippingReportTable from "@/components/ShippingReportTable";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className='flex '>
+    <div className='flex px-2 py-2'>
       <div className='flex flex-row'>
         <div className='flex flex-col'>
           <Hi />

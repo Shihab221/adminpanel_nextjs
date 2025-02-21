@@ -18,7 +18,7 @@ export function Map() {
     //   colors: ["#e7711c", "#4374e0"], // Gradient from orange to blue
       colors: ["#27cf8c"], // single color
     },
-    backgroundColor: "#fff", // Optional: Customize the background
+    backgroundColor: '#0F172A', // Optional: Customize the background
     datalessRegionColor: "#ccc", // Optional: Color for regions with no data
     defaultColor: "#f0f0f0", // Optional: Default region color
   };

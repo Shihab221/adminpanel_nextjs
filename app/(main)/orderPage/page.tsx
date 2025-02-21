@@ -6,7 +6,6 @@ import OrderTable from '@/components/OrderTable'
 const page = () => {
   return (
     <div>
-      <h2>Order List</h2>
       <OrderTable />
       <GoogleChartComponent />
     </div>

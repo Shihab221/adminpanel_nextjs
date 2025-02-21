@@ -5,7 +5,7 @@ import ThemeToggle from './ThemeToggle'
 const navbar = () => {
   return (
     <div>
-      <div className="flex items-center justify-between px-10 py-2 bg-white border-b border-gray-900 dark:border-orange-500 dark:bg-gray-900">
+      <div className="flex items-center justify-between px-10 py-2 bg-white border-b border-gray-900 dark:border-gray-500 dark:bg-gray-900">
       {/* Logo and title */}
       <div className="flex  items-center space-x-2">
         <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-green-500 rounded-md" />
