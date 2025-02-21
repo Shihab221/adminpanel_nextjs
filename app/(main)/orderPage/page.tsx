@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import { OrderData } from '@/Constant'
 import GoogleChartComponent from '@/components/GoogleChartComponent'
 import OrderTable from '@/components/OrderTable'
 const page = () => {

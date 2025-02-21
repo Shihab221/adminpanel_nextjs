@@ -18,7 +18,7 @@ const Hi = () => {
             width={64}
             height={64}
           />
-          <div className='flex flex-col'>
+          <div className='flex flex-col dark:text-gray-300'>
           <h3 className="text-lg font-medium text-start ">{item.title}</h3>
           <div className='flex  flex-row space-x-2'>
           <p className="text-2xl font-bold my-1">{item.count}</p>
